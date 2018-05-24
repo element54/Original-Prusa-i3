@@ -56,31 +56,23 @@ module support()
             translate([-72,22,0])  cube([30,16,10]);    
         }
         
-        // lower angled part cut
-        translate([-75,-2,-1])  cube([20,14,15]);    
-        translate([-70,-2,-1]) cube([20,14,15]);    
-        translate([-50,-16.3,-1]) rotate([0,0,45]) cube([20,20,15]);    
+        // lower angled part cut  
+        translate([-62,-2,-1]) cube([30,14,15]);    
+        translate([-32,-16.3,-1]) rotate([0,0,45]) cube([20,20,15]);    
         
-        translate([-76.5,-2,-1]) cube([15,40,15]);    
-        
-        difference()
-        {
-            translate([-28,0,-1]) rotate([0,0,45]) cube([10,40,15]);    
-            translate([-38,-12,-1]) cube([20,20,15]);    
-            translate([-58,23.5,-1]) cube([25,25,15]);    
-        }
+        translate([-91,-2,-1]) cube([50,50,17]);
         
         // screw holes
-        translate([-71,18+4,5]) rotate([0,90,0]) cylinder(h=22, r=1.75, $fn=30);  
-        translate([-70,29+4,5]) rotate([0,90,0]) cylinder(h=22, r=1.75, $fn=30);  
+        translate([-51,18+4,5]) rotate([0,90,0]) cylinder(h=22, r=1.75, $fn=30);  
+        translate([-52,29+4,5]) rotate([0,90,0]) cylinder(h=17, r=1.75, $fn=30);  
         
         // nut traps
-        translate([-58,15.1+4,5-2.8]) cube([2.2,5.8,29.7]);    
-        translate([-58,26.1+4,5-2.8]) cube([2.2,5.8,29.7]); 
+        translate([-38,15.1+4,5-2.8]) cube([2.5,5.8,29.7]);    
+        translate([-39.5,26.1+4,5-2.8]) cube([2.5,5.8,29.7]); 
      
         // version
         translate([-20,2,9.5]) rotate([0,0,0]) linear_extrude(height = 0.6) 
-        { text("R1",font = "helvetica:style=Bold", size=5, center=true); }   
+        { text("RX",font = "helvetica:style=Bold", size=5, center=true); }   
     }
 }
 
@@ -92,9 +84,9 @@ module left_lcd_support()
     rotate([0,0,45]) difference()
     {
         // sd card shield
-        translate([-3,3,10])  cube([2,55,10]); 
+        translate([-3,3,10])  cube([2,45,10]); 
         translate([-4,3,20]) rotate([0,90,0]) cylinder( h=4, r=7, $fn=30); 
-        translate([-4,58,20]) rotate([0,90,0]) cylinder( h=4, r=7, $fn=30); 
+        translate([-4,48,20]) rotate([0,90,0]) cylinder( h=4, r=7, $fn=30); 
     }
 }
 

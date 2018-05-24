@@ -93,7 +93,8 @@ difference()
     union()
     {
 
-    pcb_clip();
+    translate( [ 20 , 0 , 0 ] ) pcb_clip();
+    translate( [ -20 , 0 , 0 ] ) pcb_clip();
     main_body();
 
     // reset button
@@ -189,9 +190,13 @@ difference()
 
     // version
     translate([-73,15,4]) rotate([90,0,90]) linear_extrude(height = 2) 
-    { text("R2",font = "helvetica:style=Bold", size=7, center=true); }
+    { text("RX",font = "helvetica:style=Bold", size=7, center=true); }
     
-    
+    translate([0, -26, 26])rotate([45, 0, 0])cube([200, 100, 30], center=true);
+    translate([0, -27.98, 0])rotate([-45, 0, 0])cube([6, 4, 100], center=true);
+    translate([112, 0, 0])rotate([45, 0, 0])rotate([0, 45, 0])cube([200, 100, 30], center=true);
+    translate([-112, 0, 0])rotate([45, 0, 0])rotate([0, -45, 0])cube([200, 100, 30], center=true);
+
 }
 
 // print support for SD card opening
