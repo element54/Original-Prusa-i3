@@ -175,7 +175,7 @@ difference()
     translate( [ 73 , -5 , -1 ] ) rotate([0,45,0]) cube( [ 7, 80, 7 ] );  
     translate( [ -82 , -5 , -1 ] ) rotate([0,45,0]) cube( [ 7, 80, 7 ] );  
 
-    translate( [ -82 , 58 , -5 ] ) rotate([45,0,0]) cube( [ 200, 7, 7 ] );  
+    translate( [ -82 , 57 , -5 ] ) rotate([45,0,0]) cube( [ 200, 7, 7 ] );  
     translate( [ -77 , 51 , -4 ] ) rotate([0,0,45]) cube( [ 8, 8, 50 ] );  
     translate( [ 78 , 51 , -4 ] ) rotate([0,0,45]) cube( [ 8, 8, 50 ] );  
     translate( [ 78 , -19 , -4 ] ) rotate([0,0,45]) cube( [ 5, 5, 50 ] );  
