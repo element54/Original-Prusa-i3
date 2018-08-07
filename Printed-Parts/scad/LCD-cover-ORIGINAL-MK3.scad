@@ -140,6 +140,7 @@ difference()
             translate( [ 35 , 39.3 , 14.5 ] ) cube( [ 42.5 , 7 , 15 ] );  
             translate( [ 49 , 43.2 , 25 ] ) rotate([0,60,0]) cube( [ 12 , 5 , 10 ] );  
         }
+        translate([40,54, 0])rotate([0, -90, 0])linear_extrude(height=103)polygon([[0, 0], [6, 0], [0, -6]]);
     }
 
     // SD card opening
@@ -175,7 +176,7 @@ difference()
     translate( [ 73 , -5 , -1 ] ) rotate([0,45,0]) cube( [ 7, 80, 7 ] );  
     translate( [ -82 , -5 , -1 ] ) rotate([0,45,0]) cube( [ 7, 80, 7 ] );  
 
-    translate( [ -82 , 57 , -5 ] ) rotate([45,0,0]) cube( [ 200, 7, 7 ] );  
+    translate( [ -82 , 56.5 , -5 ] ) rotate([45,0,0]) cube( [ 200, 7, 7 ] );  
     translate( [ -77 , 51 , -4 ] ) rotate([0,0,45]) cube( [ 8, 8, 50 ] );  
     translate( [ 78 , 51 , -4 ] ) rotate([0,0,45]) cube( [ 8, 8, 50 ] );  
     translate( [ 78 , -19 , -4 ] ) rotate([0,0,45]) cube( [ 5, 5, 50 ] );  
