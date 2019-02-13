@@ -194,7 +194,7 @@ difference()
     { text("RX",font = "helvetica:style=Bold", size=7, center=true); }
     
     translate([0, -26, 26])rotate([45, 0, 0])cube([200, 100, 30], center=true);
-    translate([0, -27.98, 0])rotate([-45, 0, 0])cube([6, 4, 100], center=true);
+    translate([0, -27.98, 0])rotate([-45, 0, 0])cube([6, 33.8, 100], center=true);
     translate([112, 0, 0])rotate([45, 0, 0])rotate([0, 45, 0])cube([200, 100, 30], center=true);
     translate([-112, 0, 0])rotate([45, 0, 0])rotate([0, -45, 0])cube([200, 100, 30], center=true);
 
